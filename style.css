@@ -349,7 +349,7 @@
 
 /*~~ 4. Font ~~*/
 @font-face {
-    src: url(https://raw.githubusercontent.com/L-Ratio/OperaGxTheme/main/ChakraPetchRegular400);
+    src: url(https://l-ratio.github.io/ChakraPetchRegular400);
     font-family: "Chakra Petch Regular";
 }
 :root {
