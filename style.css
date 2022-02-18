@@ -6616,6 +6616,13 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
     background-color: var(rgb(--darker-background-color));    
     border-radius: 100px;
 }
+.videoControls-353CsJ{
+    border-right: 2px solid rgb(var(--accent-color-1));
+    border-bottom: 1px solid rgb(var(--accent-color-1));
+}
+.videoGridWrapper-2WpXPj{
+    border-top: 1px solid rgb(var(--accent-color-1));
+}
 
 
 /* Memberlist Borders*/
