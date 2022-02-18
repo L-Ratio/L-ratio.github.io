@@ -1,3 +1,4 @@
+@import url('https://github.com/L-Ratio/L-ratio.github.io/raw/main/ChakraPetchRegular400.ttf');
 :root {
     /* Theme Support */
     --oggt-build: "241";
@@ -349,7 +350,7 @@
 
 /*~~ 4. Font ~~*/
 @font-face {
-    src: url(https://l-ratio.github.io/ChakraPetchRegular400);
+    src: url('https://github.com/L-Ratio/L-ratio.github.io/raw/main/ChakraPetchRegular400.ttf');
     font-family: "Chakra Petch Regular";
 }
 :root {
