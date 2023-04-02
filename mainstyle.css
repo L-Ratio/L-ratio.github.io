@@ -182,9 +182,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1px;
-  height: 1px;
-  background: 1px white;
+  width: 2px;
+  height: 2px;
+  border-radius: 5px;
+  background: white;
   filter: blur(1px);
   opacity: 0;
   animation: twinkle 5s infinite;
