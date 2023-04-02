@@ -9,18 +9,17 @@
       <div class="container">
         <div class="container_content">
           <div class="profile_picture_container">
-            
-			<img
+            <img
               class="profile_picture"
               src="https://avatars.githubusercontent.com/u/54047268?v=4"
             />
           </div>
           <div class="information_container">
-            <div class="about_me">
-              <h4>About Me</h4>
+            <div class="about_me_container">
+              <h4 class="about_me_h4">About Me</h4>
               <p class="about_me_text">I like hawks and sometimes I code</p>
             </div>
-            <div class="media_links">
+            <div class="media_links_container">
               <div class="media_links_clickable">
                 <a
                   href="https://github.com/L-Ratio"
@@ -44,37 +43,45 @@
             </div>
           </div>
         </div>
+        <div class="textunder_profile_picture_container">
+          <div class="textunder_profile_picture_container_background">
+            <h4 class="textunder_profile_picture_container_text">
+              Hawk#4872
+            </h4>
+          </div>
+        </div>
       </div>
+
       <div class="stars" onload="addStarsToBackground()"></div>
     </div>
     <script>
       // Get the background element
-      const background = document.querySelector('#background');
-      
+      const background = document.querySelector("#background");
+
       // Create an array of star sizes
-      const starSizes = ['small', 'medium', 'large'];
-      
+      const starSizes = ["small", "medium", "large"];
+
       // Create a function to generate a random star size
       function getRandomStarSize() {
         return starSizes[Math.floor(Math.random() * starSizes.length)];
       }
-      
+
       // Create a function to generate a random star position
       function getRandomStarPosition() {
         const x = Math.floor(Math.random() * window.innerWidth);
         const y = Math.floor(Math.random() * window.innerHeight);
         return { x, y };
       }
-      
+
       // Create a function to generate a star element
       function createStar() {
-        const star = document.createElement('div');
-        star.classList.add('star', getRandomStarSize());
+        const star = document.createElement("div");
+        star.classList.add("star", getRandomStarSize());
         const { x, y } = getRandomStarPosition();
         star.style.left = `${x}px`;
         star.style.top = `${y}px`;
-        star.style.transition = 'opacity 5s ease-in-out';
-        star.style.boxShadow = '0 0 19px 1px #fff';
+        star.style.transition = "opacity 5s ease-in-out";
+        star.style.boxShadow = "0 0 15px 1px #fff";
         setTimeout(() => {
           setInterval(() => {
             if (Math.random() > 0.5) {
@@ -84,7 +91,7 @@
         }, Math.floor(Math.random() * 5000));
         return star;
       }
-      
+
       // Create a function to add stars to the background
       function addStarsToBackground() {
         for (let i = 0; i < 50; i++) {
@@ -92,8 +99,7 @@
           background.appendChild(star);
         }
       }
-      addStarsToBackground()
-      </script>
-      
+      addStarsToBackground();
+    </script>
   </body>
 </html>
