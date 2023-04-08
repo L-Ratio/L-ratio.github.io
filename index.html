@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hawk</title>
-    <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+    <title>Testin</title>
+    <link rel="stylesheet" type="text/css" href="mainstyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="background">
-      <div class="container">
-        <div class="container_content">
-          <div class="profile_picture_container">
-            <img
-              class="profile_picture"
-              src="https://avatars.githubusercontent.com/u/54047268?v=4"
-            />
-          </div>
-          <div class="information_container">
-            <div class="about_me_container">
-              <h4 class="about_me_h4">About Me</h4>
-              <p class="about_me_text">I like hawks and sometimes I code</p>
+    <div class="main_body_wrapper">
+      <div class="another_wrapper">
+        <div class="main_grid_wrapper">
+          <div>
+            <div class="profile_picture_wrapper">
+              <img
+                class="profile_picture"
+                src="https://avatars.githubusercontent.com/u/54047268?v=4"
+              />
             </div>
-            <div class="media_links_container">
-              <div class="media_links_clickable">
+          </div>
+          <div class="information_wrapper">
+            <div class="about_me_wrapper">
+              <h2 class="about_me_heading">About me</h2>
+              <p class="about_me_p">
+                I'm a conisuerrier about the fine arts of coding.
+                <br />
+                <br />
+
+                Hawks are one of my favorite animals
+              </p>
+            </div>
+            <div class="media_links_wrapper">
+              <hr class="rounded" />
+              <h3 class="media_links_heading">Social Media Links</h3>
+              <div class="media_clickable_wrapper">
                 <a
                   href="https://github.com/L-Ratio"
                   target="_blank"
@@ -42,21 +58,19 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="textunder_profile_picture_container">
-          <div class="textunder_profile_picture_container_background">
-            <h4 class="textunder_profile_picture_container_text">
-              Hawk#4872
-            </h4>
+          <div class="another_discord_name_wrapper">
+            <div class="discord_name_wrapper">
+              <p class="discord_name">Hawk#4872</p>
+            </div>
           </div>
+          <div class="emptyspace_wrapper" />
         </div>
       </div>
-
       <div class="stars" onload="addStarsToBackground()"></div>
     </div>
     <script>
       // Get the background element
-      const background = document.querySelector("#background");
+      const background = document.querySelector(".main_body_wrapper");
 
       // Create an array of star sizes
       const starSizes = ["small", "medium", "large"];
