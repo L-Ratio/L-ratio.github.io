@@ -75,9 +75,9 @@ body {
   font-size: x-large;
   font-weight: bold;
   font-style: oblique;
-  background: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet, pink, purple);
+  background: linear-gradient(to left, red, orange, blue, indigo, violet, pink, purple);
   background-size: 200% 200%;
-  filter: brightness(100);
+  filter: brightness(01);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: move-right-to-left 10s linear infinite;
