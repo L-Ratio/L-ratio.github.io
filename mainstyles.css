@@ -47,19 +47,20 @@ body {
   border: 5px solid var(--background-color);
   box-sizing: border-box;
 }
-.profile_picture:hover{
+.profile_picture:hover {
   animation: pulse 5s infinite;
 }
-@keyframes pulse{
-  from, to{
+@keyframes pulse {
+  from,
+  to {
     scale: 1;
   }
-  50%{
+  50% {
     scale: 1.08;
     filter: blur(1px) grayscale(50%);
   }
 
-  100%{
+  100% {
     scale: 1;
     filter: blur(0px);
   }
@@ -69,7 +70,6 @@ body {
   height: 100%;
   justify-self: center;
   object-fit: cover;
-
 }
 .discord_name_wrapper {
   height: auto;
@@ -83,7 +83,6 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-
 }
 .discord_name {
   text-align: center;
@@ -92,7 +91,17 @@ body {
   font-size: x-large;
   font-weight: bold;
   font-style: oblique;
-  background: linear-gradient(to left, red, orange, blue, indigo, violet, pink, purple, blue);
+  background: linear-gradient(
+    to left,
+    red,
+    orange,
+    blue,
+    indigo,
+    violet,
+    pink,
+    purple,
+    blue
+  );
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
